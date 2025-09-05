@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-900 text-white antialiased">
+
+    <!-- Main Container -->
+    <div class="container mx-auto max-w-6xl px-4 py-8 sm:py-12">
+
+        <!-- Form Section -->
+        <div class="mb-12">
+            <form id="task-form" class="space-y-4">
+                <!-- Title Input -->
+                <input
+                    id="task-title"
+                    type="text"
+                    placeholder="Title goes here.."
+                    class="w-full bg-slate-800 border border-slate-700 rounded-lg p-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+                >
+                <!-- Details Textarea -->
+                <textarea
+                    id="task-details"
+                    rows="3"
+                    placeholder="Write your task details here..."
+                    class="w-full bg-slate-800 border border-slate-700 rounded-lg p-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+                ></textarea>
+                <!-- Submit Button -->
+                <div>
+                    <button
+                        type="submit"
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-lg transition duration-200 ease-in-out transform hover:scale-105"
+                    >
+                        Create Task
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Task Cards Grid -->
+        <div id="task-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Sample Task Card 1 -->
+            <div class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col justify-between">
+                <div>
+                    <h2 class="text-xl font-bold text-white mb-2">Some task goes here.</h2>
+                    <p class="text-slate-400 text-sm mb-4">This is a sample description for the task. You can add more details here to explain what needs to be done.</p>
+                </div>
+                <a href="#" class="text-blue-400 hover:underline font-medium text-sm self-start">Read More..</a>
+            </div>
+
+            <!-- Sample Task Card 2 -->
+            <div class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col justify-between">
+                <div>
+                    <h2 class="text-xl font-bold text-white mb-2">Another important task.</h2>
+                     <p class="text-slate-400 text-sm mb-4">Here are some more details about the second task. It's important to keep track of all the requirements.</p>
+                </div>
+                <a href="#" class="text-blue-400 hover:underline font-medium text-sm self-start">Read More..</a>
+            </div>
+
+            <!-- Sample Task Card 3 -->
+            <div class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col justify-between">
+                <div>
+                    <h2 class="text-xl font-bold text-white mb-2">Final task for today.</h2>
+                     <p class="text-slate-400 text-sm mb-4">This is the last sample task. Make sure everything is completed before the end of the day.</p>
+                </div>
+                <a href="#" class="text-blue-400 hover:underline font-medium text-sm self-start">Read More..</a>
+            </div>
+        </div>
+    </div>
+<script src="/javascripts/script.js"></script>
+</body>
+</html>
