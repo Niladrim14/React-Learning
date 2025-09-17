@@ -1,2 +1,2 @@
 # Backend
-A backend series when I am learning
+A backend series where I am learning
