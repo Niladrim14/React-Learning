@@ -4,9 +4,14 @@ import { useState } from "react";
    
   let [counter,setCounter]= useState(15)
   const addvalue = ()=>{
+    if(counter<20)
     setCounter(counter+1)
+  else {
+    h3
+  }
   } 
   const lessvalue = ()=>{
+    if(counter>0)
     setCounter(counter-1)}
   return (
     <>
